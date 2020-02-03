@@ -1,2 +1,2 @@
-![Image description](./showOne.png)
-![Image description](./showTwo.png)
+![Image description](../showOne.png)
+![Image description](../showTwo.png)
