@@ -7,8 +7,9 @@ function writeUserData(data) {
   firebase
     .database()
     .ref("users/" + 1)
-    .set({
-      data
+    .push({
+      ...data,
+      robbie: new Date()
     });
 }
 
