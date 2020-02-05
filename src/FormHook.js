@@ -1,6 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./styles.css";
+import firebase, { todosRef } from "./firebase";
+
+function writeUserData(data) {
+  firebase
+    .database()
+    .ref("users/" + 1)
+    .set({
+      data
+    });
+}
 
 function FormValidate() {
   const {
@@ -12,7 +22,8 @@ function FormValidate() {
     formState: { isSubmitting }
   } = useForm();
   const onSubmit = data => {
-    alert(JSON.stringify(data));
+    writeUserData(data);
+    console.log(data);
   };
   const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   const validateUserName = async value => {

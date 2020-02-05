@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     maxWidth: "100%"
   },
-  color: {
+  text: {
     color: "white"
   }
 });
@@ -59,7 +59,7 @@ export default function FormPropsTextFields() {
             <Typography gutterBottom variant="h3" component="h3">
               HELP US CREATE A QUEST!
             </Typography>
-            <Typography color="primary" component="p">
+            <Typography className={classes.text} component="p">
               Tell us what you think our next quest within EthQuest should be!
               You'll be credited as a creator if selected!
             </Typography>
