@@ -23,26 +23,32 @@ function FormValidate() {
       clearError("username");
     }
   };
-
   return (
     <form className="App" onSubmit={handleSubmit(onSubmit)}>
       <h1>Your Quest Idea!</h1>
       <label>First Name:</label>
-      <input name="firstName" ref={register({ required: true })} />
+      <input
+        name="firstName"
+        ref={register({ required: true })}
+        id="firstName"
+      />
 
       <label>Last Name:</label>
-      <input name="lastName" ref={register({ required: true, minLength: 2 })} />
+      <input
+        name="lastName"
+        ref={register({ required: true, minLength: 2 })}
+        id="lastName"
+      />
 
       <label>Email</label>
       <input
         name="email"
         ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+        id="email"
       />
-
       <label>Quest Idea</label>
       <textarea name="idea" ref={register} />
-
-      <input disabled={isSubmitting} type="submit" />
+      <input disabled={isSubmitting} type="submit" id="idea" />
     </form>
   );
 }

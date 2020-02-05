@@ -6,7 +6,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import imgHeader from "./mindBlast.png";
 const useStyles = makeStyles({
@@ -26,8 +25,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     maxWidth: "100%",
-    height: "100%",
-    border: "1px solid blue"
+    height: "100%"
   },
   form: {
     display: "flex",
@@ -39,8 +37,10 @@ const useStyles = makeStyles({
   header: {
     display: "flex",
     justifyContent: "center",
-    maxWidth: "100%",
-    border: "3px solid blue"
+    maxWidth: "100%"
+  },
+  color: {
+    color: "white"
   }
 });
 
@@ -59,7 +59,7 @@ export default function FormPropsTextFields() {
             <Typography gutterBottom variant="h3" component="h3">
               HELP US CREATE A QUEST!
             </Typography>
-            <Typography variant="body2" color="primary" component="p">
+            <Typography color="primary" component="p">
               Tell us what you think our next quest within EthQuest should be!
               You'll be credited as a creator if selected!
             </Typography>
@@ -68,25 +68,4 @@ export default function FormPropsTextFields() {
       </Card>
     </div>
   );
-}
-
-{
-  /* <Card className={classes.form}>
-<form>
-  <div>
-    <TextField
-      required
-      id="standard-required"
-      label="Required"
-      defaultValue="Hello World"
-    />
-    <TextField
-      id="standard-search"
-      label="Search field"
-      type="search"
-    />
-  </div>
-  <div></div>
-</form>
-</Card> */
 }

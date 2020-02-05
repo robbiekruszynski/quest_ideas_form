@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import FormPropsTextFields from "./Form.js";
+import FormPropsTextFields from "./Splash.js";
 import FormValidate from "./FormHook.js";
 
 function App() {

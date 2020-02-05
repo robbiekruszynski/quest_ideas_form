@@ -1,0 +1,21 @@
+[debug] [2020-02-05T00:16:26.308Z] ----------------------------------------------------------------------
+[debug] [2020-02-05T00:16:26.310Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2020-02-05T00:16:26.310Z] CLI Version:   6.5.0
+[debug] [2020-02-05T00:16:26.310Z] Platform:      darwin
+[debug] [2020-02-05T00:16:26.310Z] Node Version:  v12.4.0
+[debug] [2020-02-05T00:16:26.311Z] Time:          Tue Feb 04 2020 16:16:26 GMT-0800 (Pacific Standard Time)
+[debug] [2020-02-05T00:16:26.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-02-05T00:16:26.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-05T00:16:26.317Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/rfk/Desktop/rapid_quest_form
+
